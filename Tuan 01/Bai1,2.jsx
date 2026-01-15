@@ -42,4 +42,9 @@ const markHigherBMI = merkBMI > johnBMI;
 
 console.log("BMI của Mark:", merkBMI.toFixed(2));
 console.log("BMI của John:", johnBMI.toFixed(2));
-console.log("Mark có BMI cao hơn John không?", markHigherBMI);
+
+if (markHigherBMI) {
+    console.log(`BMI của Mark (${merkBMI.toFixed(2)}) cao hơn BMI của John (${johnBMI.toFixed(2)})!`);
+} else {
+    console.log(`BMI của John (${johnBMI.toFixed(2)}) cao hơn BMI của Mark (${merkBMI.toFixed(2)})!`);
+}
